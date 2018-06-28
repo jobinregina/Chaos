@@ -17,3 +17,10 @@ Dynamic systems are systems whose state varies over time, such systems obey one 
 ![](https://raw.githubusercontent.com/jobinregina/Chaos/Data/chu_1d.png)
 
 ***Image1:*** *1D time series of Chua's dynamic system*
+
+## Data generate and Preprocessing
+Rossler's and Chua's time series are generated using ODE45 integration method. Three dimensions of chaotic systems are 
+used for both input & target vector during ANN training. From a single dimensional time series x, input vector is created
+as the one step delayed time series while target vector is the one step ahead time series. This is achieved by windowing
+method where consecutive values of time series are assigned one value as input and another as target. To avoid improper 
+starting point off the trajectory the first 10000 samples are discarded. 
