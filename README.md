@@ -6,6 +6,6 @@ Dynamic systems are systems whose state varies over time, such systems obey one 
 
 ***Image1:*** *Complex chaotic attractor of Rossler's dynamic system*
 
-![](https://raw.githubusercontent.com/jobinregina/Chaos/master/ross_1d.jpg)
+![](https://raw.githubusercontent.com/jobinregina/Chaos/Data/ross_1d.png)
 
 ***Image1:*** *Complex chaotic attractor of Rossler's dynamic system*
