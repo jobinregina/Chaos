@@ -46,3 +46,32 @@ _5. Razieh Falahian,Maryam Mehdizadeh Dastjerdi,et.al, Artificial neural network
 
 ## Methodology
 
+Entire coding is done in MATLAB Neural Network Toolbox is used. MATLAb is wrapped version of Caffe.2 types of Neural Networks in FFNN (i) MLP (ii) RBFN and 2 types of feedback Neural Networks (i) TDNN (ii) RNN. Single hidden layer is deployed for all the Neural Networks. Training/Testing and Validation ratio used is 70:15:15. Loss function used is MSE and performance goals are calculated based on previous studies. Three dimensions of chaotic system are used for training & windowing method is used to generate training samples.
+
+## MLP vs RBFN modelling
+
+First 10k samples are ignored.
+Hyperbolic tangent sigmoid/linear  MLP.
+Gaussian  RBFN
+Each experiment run for 1000 epochs and multiple trials to avoid gradient hitting local minima with 6 validation stops.
+RBFN MSE is calculated for different values of spread & value with minimum MSE chosen.
+
+## Results FFNN
+Testing performance improves  hidden layer neurons increase.
+MSE comparison bar 2.00E-06
+MLP – 5 neurons RBFN – 20 neurons
+LM best algorithm: (i) rate of convergence (ii) training time.
+Testing performance doesn't improve after 8 hidden neurons much.
+Chua’s system results followed Rossler’s. FFNN MSE3E-04.
+
+## Results FBNN
+Time delayed Neural Network  The Nonlinear Auto-Regressive(NAR) for generating an iterative model.
+Dynamic Recurrent Neural Network Nonlinear Auto-Regressive with Exogenous Inputs (NARX).
+Single input to the NARX is the bifurcation parameter of Rossler’s map.
+Input delay and target delay are experimentally calculated as 1 time step.
+
+# Evaluation study
+
+
+
+
