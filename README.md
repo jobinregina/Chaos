@@ -67,7 +67,7 @@ Dynamic Recurrent Neural Network Nonlinear Auto-Regressive with Exogenous Inp
 Single input to the NARX is the bifurcation parameter of Rossler’s map.
 Input delay and target delay are experimentally calculated as 1 time step.
 
-# Evaluation study
+## Evaluation study
 
 
 
