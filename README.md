@@ -5,3 +5,7 @@ Dynamic systems are systems whose state varies over time, such systems obey one 
 ![](https://raw.githubusercontent.com/jobinregina/Chaos/master/Ross.jpg)
 
 ***Image1:*** *Complex chaotic attractor of Rossler's dynamic system*
+
+![](https://raw.githubusercontent.com/jobinregina/Chaos/master/ross_1d.jpg)
+
+***Image1:*** *Complex chaotic attractor of Rossler's dynamic system*
