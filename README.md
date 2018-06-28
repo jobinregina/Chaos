@@ -1,2 +1,6 @@
-Hi Everone,
-I like to predict future and I l like science. I can be an astrologer but I like to believe in more rational things rather than position of planets. Scientific prediction is made possible by AI. I like to tell you one of my first interaction with time series. My dad was a planter and we had rubber plantations back at my home town. he was good at farming but not with business. Sometimes he kept stocking expecting price rise but ended up making loses. Time Series fascinated me ever since that time and later i started studying them and understanding linear, nonlinear, complex chaos and randomness I armed with machine learning tools to challenge the future.
+Hello everyone this project will help you learn how to model complex nonlinear time series which are empirical systems. Empirical systems input and output 
+
+
+#Training Data#
+---------------
+First task is to generate training data using 
