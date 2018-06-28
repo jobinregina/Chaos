@@ -1,7 +1,4 @@
 # Predition and modelling of chaotic systems
-![](https://raw.githubusercontent.com/jobinregina/Chaos/master/Ross.jpg)
-
-***Image1:*** *Complex chaotic attractor of Rossler's dynamic system*
 
 Hi everybody my name is Jobin Sunny, I’m from the University of Regina. This project aims at longterm precition and modelling of nonlinear dynamic systems showing chaotic spectrum using Artificial Neural Networks. In this work I'll explain a little about the background and motivation of my study first, previous studies done in this field, purpose of my research then we see some of the methodologies I have applied on the data and the results obtained. In addition, a consequence study and discussion of the results as a part of evaluation.
 
