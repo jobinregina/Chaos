@@ -47,19 +47,13 @@ Entire coding is done in MATLAB Neural Network Toolbox is used. MATLAb is wrappe
 
 ## MLP vs RBFN modelling
 
-First 10k samples are ignored.
-Hyperbolic tangent sigmoid/linear  MLP.
-Gaussian  RBFN
-Each experiment run for 1000 epochs and multiple trials to avoid gradient hitting local minima with 6 validation stops.
-RBFN MSE is calculated for different values of spread & value with minimum MSE chosen.
+First 10k training samples are ignored in order to remove any transient noise. Hyperbolic tangent sigmoid and linear linear activation are used for hidden and output layer of MLP respectively. Gaussian activation function is used in the funtional layer of Radial Basis Function Network. Each experiment run for 1000 epochs and multiple trials to avoid gradient hitting local minima with 6 validation stops. RBFN MSE is calculated for different values of spread & value with minimum MSE chosen.
 
 ## Results FFNN
-Testing performance improves  hidden layer neurons increase.
-MSE comparison bar 2.00E-06
-MLP – 5 neurons RBFN – 20 neurons
-LM best algorithm: (i) rate of convergence (ii) training time.
-Testing performance doesn't improve after 8 hidden neurons much.
-Chua’s system results followed Rossler’s. FFNN MSE3E-04.
+For all architectures the testing performance improves as the hidden layer neurons increase.
+MSE comparison between MLP and RBFN is done at 2.00E-06. MLP took 5 neurons while RBFN took 20 neurons to reach same performance.
+Out of the three algorithm tested LM algorithm is found as the best algorithm: (i) rate of convergence (ii) training time.
+Testing performance doesn't improve a lot after 8 hidden neurons. Chua’s system results followed Rossler’s. FFNN MSE3E-04.
 
 ## Results FBNN
 Time delayed Neural Network  The Nonlinear Auto-Regressive(NAR) for generating an iterative model.
