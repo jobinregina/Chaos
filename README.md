@@ -47,13 +47,32 @@ Entire coding is done in MATLAB Neural Network Toolbox is used. MATLAb is wrappe
 
 ## MLP vs RBFN modelling
 
+![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/rbfnffnn1.bmp)
+
+***Image3:*** *Validation performance comparison plot of RBFN vs FFNN for the Rossler’s system*
+
 First 10k training samples are ignored in order to remove any transient noise. Hyperbolic tangent sigmoid and linear linear activation are used for hidden and output layer of MLP respectively. Gaussian activation function is used in the funtional layer of Radial Basis Function Network. Each experiment run for 1000 epochs and multiple trials to avoid gradient hitting local minima with 6 validation stops. RBFN MSE is calculated for different values of spread & value with minimum MSE chosen.
 
 ## Results FFNN
+
+![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/rbfnffnn1.bmp)
+
+***Image4:*** *Validation performance comparison plot of RBFN vs FFNN for the Rossler’s system*
+
+![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/chua_mse1.bmp)
+
+***Image5:*** *Validation performance of FFNN over different learning algorithms for the Chua’s map*
+
 For all architectures the testing performance improves as the hidden layer neurons increase.
 MSE comparison between MLP and RBFN is done at 2.00E-06. MLP took 5 neurons while RBFN took 20 neurons to reach same performance.
 Out of the three algorithm tested LM algorithm is found as the best algorithm: (i) rate of convergence (ii) training time.
 Testing performance doesn't improve a lot after 8 hidden neurons. Chua’s system results followed Rossler’s. FFNN MSE3E-04.
+
+## Feedback Neural Networks
+
+Time delayed Neural Network  The Nonlinear Auto-Regressive(NAR) for generating an iterative model.Dynamic Recurrent Neural Network Nonlinear Auto-Regressive with Exogenous Inputs (NARX). Single input to the NARX is the bifurcation parameter of Rossler’s map.
+Input delay and target delay are experimentally calculated as 1 time step.
+
 
 ## Results FBNN
 Time delayed Neural Network  The Nonlinear Auto-Regressive(NAR) for generating an iterative model.
