@@ -47,9 +47,9 @@ Entire coding is done in MATLAB Neural Network Toolbox is used. MATLAb is wrappe
 
 ## MLP vs RBFN modelling
 
-![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/rbfnffnn1.bmp)
+![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/mlp-diagram.jpg)
 
-***Image3:*** *Validation performance comparison plot of RBFN vs FFNN for the Rossler’s system*
+***Image3:*** *AN example of a feedforward Neural Network with a hidden layer of 3 neurons*
 
 First 10k training samples are ignored in order to remove any transient noise. Hyperbolic tangent sigmoid and linear linear activation are used for hidden and output layer of MLP respectively. Gaussian activation function is used in the funtional layer of Radial Basis Function Network. Each experiment run for 1000 epochs and multiple trials to avoid gradient hitting local minima with 6 validation stops. RBFN MSE is calculated for different values of spread & value with minimum MSE chosen.
 
@@ -70,14 +70,25 @@ Testing performance doesn't improve a lot after 8 hidden neurons. Chua’s syste
 
 ## Feedback Neural Networks
 
+![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/fb.jpg)
+
+***Image6:*** *AN example of a feedback Neural Network with a hidden layer of 4 neurons*
+
 Time delayed Neural Network  The Nonlinear Auto-Regressive(NAR) for generating an iterative model.Dynamic Recurrent Neural Network Nonlinear Auto-Regressive with Exogenous Inputs (NARX). Single input to the NARX is the bifurcation parameter of Rossler’s map.
 Input delay and target delay are experimentally calculated as 1 time step.
 
 
 ## Results FBNN
-Time delayed Neural Network  The Nonlinear Auto-Regressive(NAR) for generating an iterative model.
-Dynamic Recurrent Neural Network Nonlinear Auto-Regressive with Exogenous Inputs (NARX).
-Single input to the NARX is the bifurcation parameter of Rossler’s map.
+
+![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/NAR1.bmp)
+
+***Image7:*** *Validation performance of NAR ANN over different trials for Rossler’s chaotic map*
+
+![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/NARX_mse1.bmp)
+
+***Image8:*** *Validation performance comparison of Rossler’s bifurcation for parameters a,b,c vs number of neurons for NARX ANN*
+
+Time delayed Neural Network  The Nonlinear Auto-Regressive(NAR) for generating an iterative model. Dynamic Recurrent Neural Network Nonlinear Auto-Regressive with Exogenous Inputs (NARX). Single input to the NARX is the bifurcation parameter of Rossler’s map.
 Input delay and target delay are experimentally calculated as 1 time step.
 
 ## Evaluation study
