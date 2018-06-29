@@ -70,12 +70,14 @@ Testing performance doesn't improve a lot after 8 hidden neurons. Chua’s syste
 
 ## Feedback Neural Networks
 
+### Time delayed Neural Network
+
 ![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/fb.jpg)
 
 ***Image6:*** *AN example of a feedback Neural Network with a hidden layer of 4 neurons*
 
-Time delayed Neural Network  The Nonlinear Auto-Regressive(NAR) for generating an iterative model.Dynamic Recurrent Neural Network Nonlinear Auto-Regressive with Exogenous Inputs (NARX). Single input to the NARX is the bifurcation parameter of Rossler’s map.
-Input delay and target delay are experimentally calculated as 1 time step.
+
+NAR neural network can be trained to forecast the next values from the information of that series past value. Training of the network is done in open loop form and prediction is done in closed loop form. NAR network is trained in open loop on the data of the Rossler’s chaotic system. The input time delay is experimentally determined as one. The architecture has only one input and in closed loop mode input is joined to the output. We execute the closed loop architecture by giving just the input delay and initial values. This is identical to a chaotic system iteration where we only need the initial values to iterate through the trajectories. The performance of the closed loop model over different trials for LM algorithm is given in the plot below. LM algorithm is chosen here because its performance was found optimal for open loop training which is the first part of the NAR training also. Trial and error method is employed to calculate the best input delay and as delay increases, there are 2 drawbacks. There is an increase in the training time for the neural network as convergence rate also decreases and the performance also degrades since the prediction can be either depend on short term or long-term memory of the input time series. Hence single delay is selected as most effective one for our scenario. NARX are dynamic recurrent neural networks that can successfully use its output feedback loop to improve its predictive performance in complex time series prediction and modelling tasks. It has been proved in previous studies that NARX network outperform NAR networks in prediction accuracy due to its external input which serves as a real data input and enhance further prediction accuracy. In this study a repetition of this is not done, instead a novel modelling technique for the bifurcation diagram of Rossler’s system is studied. Bifurcation diagrams explain the illustrates the summary of succession of period doubling process with the change in the parameter. 
 
 
 ## Results FBNN
@@ -93,6 +95,21 @@ Input delay and target delay are experimentally calculated as 1 time step.
 
 ## Evaluation study
 
+The chaotic model performance need to be evaluated to ensure the output of the neural network model is correct and the neural network is sufficiently trained. Loss function ensures the performance of the neural network, but a quantitative study and qualitative study will help to visualize and compare the outputs of neural network model and empirical system. Quantitative analysis of the data includes measuring the volatility of the system, which includes the degree of variations in the data. This can be measured by analyzing the Hurst exponent and Lyapunov exponent of the empirical data. Hurst exponent analysis is mainly used for identifying trends, deterministic chaos and fractal structure of data. Lyapunov exponents measure the rate of separation of very close trajectories, which means they can be very helpful in understanding the degree of sensitivity to initial conditions. On the other hand, qualitative analysis of the system includes superposition of the output of the neural network model over the empirical data. This provides a visual representation of the accuracy of state space model of the modelled chaotic system. Finally, the effectiveness of the neural network model is evaluated by a runtime analysis to measure the time it takes to generate the state space model once trained.
 
+![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/Rbif_a.PNG)
 
+![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/Rbif_b.PNG)
+
+![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/Rbif_c.PNG)
+
+***Image7:*** *Output time series and bifurcation diagrams w.r.t parameter a, b, c are reconstructed using the dynamic NN model*
+
+![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/rossler_o.png)
+
+***Image7:*** *State diagram of NN model superimposed on actual Rossler’s attractor*
+
+![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/runt.bmp)
+
+***Image7:*** *Runtime comparison between ODE method and NN generated chaotic models*
 
