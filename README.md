@@ -45,7 +45,10 @@ _5. Razieh Falahian,Maryam Mehdizadeh Dastjerdi,et.al, Artificial neural network
 
 Entire coding is done in MATLAB Neural Network Toolbox is used. MATLAb is wrapped version of Caffe.2 types of Neural Networks in FFNN (i) MLP (ii) RBFN and 2 types of feedback Neural Networks (i) TDNN (ii) RNN. Single hidden layer is deployed for all the Neural Networks. Training/Testing and Validation ratio used is 70:15:15. Loss function used is MSE and performance goals are calculated based on previous studies. Three dimensions of chaotic system are used for training & windowing method is used to generate training samples.
 
-## MLP vs RBFN modelling
+## Feedforward Neural Networks
+### Multilayer Perceptron (MLP) & Radial Basis Function Network (RBFN)
+
+Feed forward Neural networks is the simple type of Artificial Neural Network where connections do not form a cycle as in Recurrent Neural Network. The flow of data is only in one direction, i.e. data is fed by the neurons from input layer to hidden layer then to output layer and there are no feedback connections between output and input. FFNN can be either single layer perceptron model (SLP) or Multilayered perceptron (MLP). RBFN is another member of the feedforward neural network and has Radial basis function as activation function. Radbas function are used for function approximation, classification and prediction. It has both unsupervised and supervised phases. 
 
 ![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/mlp-diagram.jpg)
 
