@@ -35,7 +35,7 @@ _5. Razieh Falahian,Maryam Mehdizadeh Dastjerdi,et.al, Artificial neural network
 **Open loop modelling technique.**
 
 ## Purpose of this work
-1. A comprehensive study on prediction and modelling using (1) Feedforward Neural Networks  (2) Feedback Neural networks.
+1. A comprehensive study on prediction and modelling of nonlinear dynamic systems using (1) Feedforward Neural Networks  (2) Feedback Neural networks.
 2. How well the validation performance improves with increase in the number of hidden layer neurons?
 3. Which algorithm suites best for modelling complex nonlinear time series?
 4. Does the results hold for other dynamic systems?
@@ -103,13 +103,13 @@ The chaotic model performance need to be evaluated to ensure the output of the n
 
 ![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/Rbif_c.PNG)
 
-***Image7:*** *Output time series and bifurcation diagrams w.r.t parameter a, b, c are reconstructed using the dynamic NN model*
+***Image9:*** *Output time series and bifurcation diagrams w.r.t parameter a, b, c are reconstructed using the dynamic NN model*
 
 ![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/rossler_o.png)
 
-***Image7:*** *State diagram of NN model superimposed on actual Rossler’s attractor*
+***Image10:*** *State diagram of NN model superimposed on actual Rossler’s attractor*
 
 ![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/runt.bmp)
 
-***Image7:*** *Runtime comparison between ODE method and NN generated chaotic models*
+***Table1:*** *Runtime comparison between ODE method and NN generated chaotic models*
 
