@@ -70,7 +70,7 @@ Testing performance doesn't improve a lot after 8 hidden neurons. Chua’s syste
 
 ## Feedback Neural Networks
 
-### Time delayed Neural Network
+### Nonlinear Autoregressive (NAR) & Nonlinear Autoregressive with Exogenous Inputs (NARX)
 
 ![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/fb.jpg)
 
