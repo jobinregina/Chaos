@@ -53,7 +53,7 @@ Entire coding is done in MATLAB Neural Network Toolbox is used. MATLAb is wrappe
 
 First 10k training samples are ignored in order to remove any transient noise. Hyperbolic tangent sigmoid and linear linear activation are used for hidden and output layer of MLP respectively. Gaussian activation function is used in the funtional layer of Radial Basis Function Network. Each experiment run for 1000 epochs and multiple trials to avoid gradient hitting local minima with 6 validation stops. RBFN MSE is calculated for different values of spread & value with minimum MSE chosen.
 
-## Results FFNN
+## Results MLP vs RBFN modelling
 
 ![EEG](https://raw.githubusercontent.com/jobinregina/Chaos/master/rbfnffnn1.bmp)
 
